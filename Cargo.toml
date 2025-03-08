@@ -1,6 +1,22 @@
 [package]
 name = "otik"
+description = "🐺 A web client written in Rust for TypeScript."
 version = "0.1.0"
+authors = ["Nehuén <https://github.com/nehu3n>"]
+repository = "https://github.com/kitojs/otik"
+license = "MIT"
+readme = "README.md"
 edition = "2021"
 
+[lib]
+name = "libotik"
+crate-type = ["cdylib"]
+
 [dependencies]
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = "fat"
+strip = true
+panic = "abort"
