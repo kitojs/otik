@@ -1,0 +1,13 @@
+{
+	"name": "otik",
+	"version": "1.0.0",
+	"description": "The Otik's workspace.",
+	"scripts": {},
+
+	"author": "Nehuén <github.com/nehu3n>",
+	"license": "MIT",
+	"packageManager": "pnpm@10.14.0",
+
+	"dependencies": {},
+	"devDependencies": {}
+}
