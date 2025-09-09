@@ -2,9 +2,14 @@
   "name": "otik",
   "version": "1.0.0",
   "description": "🦊 The high-performance, type-safe and modern TypeScript HTTP client written in Rust.",
-  "scripts": {},
+  "scripts": {
+    "build": "tsdown"
+  },
 
   "dependencies": {},
+  "devDependencies": {
+    "tsdown": "^0.15.0"
+  },
   "peerDependencies": {
     "typescript": "^5.9.2"
   },
