@@ -8,8 +8,15 @@
     "lint": "biome lint",
     "lint:fix": "biome lint --write",
     "check": "biome check",
-    "check:fix": "biome check --write"
+    "check:fix": "biome check --write",
+
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev"
   },
+
+  "workspaces": [
+    "packages/*"
+  ],
 
   "author": "Nehuén <github.com/nehu3n>",
   "license": "MIT",
