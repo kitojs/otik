@@ -2,7 +2,14 @@
   "name": "otik",
   "version": "1.0.0",
   "description": "The Otik's workspace.",
-  "scripts": {},
+  "scripts": {
+    "fmt": "biome format",
+    "fmt:fix": "biome format --write",
+    "lint": "biome lint",
+    "lint:fix": "biome lint --write",
+    "check": "biome check",
+    "check:fix": "biome check --write"
+  },
 
   "author": "Nehuén <github.com/nehu3n>",
   "license": "MIT",
