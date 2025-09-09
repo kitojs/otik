@@ -2,7 +2,9 @@
   "name": "@kitojs/otik-core",
   "version": "1.0.0",
   "description": "Internal logic (core) of the Otik HTTP client written in Rust.",
-  "scripts": {},
+  "scripts": {
+    "build": "napi build --platform --release --esm --const-enum --output-dir dist"
+  },
 
   "dependencies": {},
   "devDependencies": {
