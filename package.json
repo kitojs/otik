@@ -1,13 +1,16 @@
 {
-	"name": "otik",
-	"version": "1.0.0",
-	"description": "The Otik's workspace.",
-	"scripts": {},
+  "name": "otik",
+  "version": "1.0.0",
+  "description": "The Otik's workspace.",
+  "scripts": {},
 
-	"author": "Nehuén <github.com/nehu3n>",
-	"license": "MIT",
-	"packageManager": "pnpm@10.14.0",
+  "author": "Nehuén <github.com/nehu3n>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.14.0",
 
-	"dependencies": {},
-	"devDependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "2.2.3",
+    "typescript": "^5.9.2"
+  }
 }
