@@ -6,7 +6,9 @@
     "build": "tsdown"
   },
 
-  "dependencies": {},
+  "dependencies": {
+    "@kitojs/otik-core": "workspace:*"
+  },
   "devDependencies": {
     "tsdown": "^0.15.0"
   },
