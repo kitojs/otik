@@ -11,20 +11,21 @@
     "check:fix": "biome check --write",
 
     "build": "pnpm -r build",
-    "dev": "pnpm -r dev"
-  },
+    "dev": "pnpm -r dev",
 
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
   "workspaces": [
     "packages/*"
   ],
-
   "author": "Nehuén <github.com/nehu3n>",
   "license": "MIT",
   "packageManager": "pnpm@10.14.0",
-
-  "dependencies": {},
   "devDependencies": {
     "@biomejs/biome": "2.2.3",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "vitepress": "2.0.0-alpha.12"
   }
 }
