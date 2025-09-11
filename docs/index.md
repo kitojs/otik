@@ -5,6 +5,9 @@ hero:
   name: "Otik"
   text: "🦊 The high-performance, type-safe, and modern TypeScript HTTP client written in Rust."
   tagline: "Very fast, safe, and elegant HTTP requests with zero bloat."
+  image:
+    src: /otik-logo.png
+    alt: Otik Logo
   actions:
     - theme: brand
       text: Get started
@@ -12,7 +15,6 @@ hero:
     - theme: alt
       text: Benchmarks
       link: https://github.com/kitojs/otik/bench
-
 features:
   - title: High Performance
     icon: ⚡

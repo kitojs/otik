@@ -4,7 +4,9 @@ export default defineConfig({
   title: "Otik",
   description:
     "🦊 The high-performance, type-safe and modern TypeScript HTTP client written in Rust.",
+  head: [["link", { rel: "icon", href: "/otik-logo.png" }]],
   themeConfig: {
+    logo: "/otik-logo.png",
     nav: [
       { text: "Home", link: "/" },
       { text: "Examples", link: "https://github.com/kitojs/otik/examples" },
