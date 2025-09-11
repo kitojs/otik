@@ -1,0 +1,49 @@
+{
+  "name": "otik",
+  "version": "1.0.0",
+  "description": "🦊 The high-performance, type-safe and modern TypeScript HTTP client written in Rust.",
+  "scripts": {
+    "build": "tsdown"
+  },
+
+  "dependencies": {
+    "@kitojs/otik-core": "workspace:*"
+  },
+  "devDependencies": {
+    "tsdown": "^0.15.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.2"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kitojs/otik.git"
+  },
+  "homepage": "https://otikjs.pages.dev",
+  "bugs": {
+    "url": "https://github.com/kitojs/otik/issues"
+  },
+
+  "license": "MIT",
+  "author": {
+    "name": "Nehuén",
+    "url": "https://github.com/nehu3n"
+  },
+
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+
+  "files": [
+    "dist",
+    "readme.md",
+    "package.json"
+  ]
+}

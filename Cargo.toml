@@ -1,26 +1,10 @@
-[package]
-name = "otik"
-description = "🐺 A web client written in Rust for TypeScript."
-version = "0.1.0"
-authors = ["Nehuén <https://github.com/nehu3n>"]
-repository = "https://github.com/kitojs/otik"
-license = "MIT"
-readme = "README.md"
-edition = "2021"
-
-[lib]
-crate-type = ["cdylib"]
-
-[dependencies]
-napi = { version = "2.12.2", default-features = false, features = ["napi4"] }
-napi-derive = "2.12.2"
-
-[build-dependencies]
-napi-build = "2.0.1"
+[workspace]
+resolver = "3"
+members = ["packages/core"]
 
 [profile.release]
-opt-level = 3
-codegen-units = 1
 lto = "fat"
-strip = true
+codegen-units = 1
 panic = "abort"
+opt-level = 3
+strip = true

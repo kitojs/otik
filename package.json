@@ -1,42 +1,31 @@
 {
   "name": "otik",
-  "version": "0.0.0",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "napi": {
-    "name": "otik",
-    "triples": {
-      "additional": [
-        "aarch64-apple-darwin",
-        "aarch64-linux-android",
-        "aarch64-unknown-linux-gnu",
-        "aarch64-unknown-linux-musl",
-        "aarch64-pc-windows-msvc",
-        "armv7-unknown-linux-gnueabihf",
-        "armv7-unknown-linux-musleabihf",
-        "x86_64-unknown-linux-musl",
-        "x86_64-unknown-freebsd",
-        "i686-pc-windows-msvc",
-        "armv7-linux-androideabi",
-        "universal-apple-darwin",
-        "riscv64gc-unknown-linux-gnu"
-      ]
-    }
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@napi-rs/cli": "^2.18.4"
-  },
-  "engines": {
-    "node": ">= 10"
-  },
+  "version": "1.0.0",
+  "description": "The Otik's workspace.",
   "scripts": {
-    "artifacts": "napi artifacts",
-    "build": "napi build --platform --release",
-    "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish -t npm",
-    "test": "ava",
-    "universal": "napi universal",
-    "version": "napi version"
+    "fmt": "biome format",
+    "fmt:fix": "biome format --write",
+    "lint": "biome lint",
+    "lint:fix": "biome lint --write",
+    "check": "biome check",
+    "check:fix": "biome check --write",
+
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev",
+
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "Nehuén <github.com/nehu3n>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@biomejs/biome": "2.2.3",
+    "typescript": "^5.9.2",
+    "vitepress": "2.0.0-alpha.12"
   }
 }
